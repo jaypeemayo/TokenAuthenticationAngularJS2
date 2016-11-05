@@ -1,0 +1,14 @@
+﻿
+<div>
+    <div>{{userName + password}}</div>
+    <label>
+        User Name
+    </label>
+    <input [(ngModel)] ="userName"/><br />
+    <label>
+        Password
+    </label>
+    <input type="password"  [(ngModel)] ="password"/><br />
+
+    <button (click) ="onLogin()">Login</button>
+</div>

@@ -1,0 +1,12 @@
+﻿<h1>Remit And Budget</h1>
+
+<nav>
+    <span *ngIf="isLoggedIn">
+        <a (click)="logOut()" routerLinkActive="active">Logout</a>
+    </span>
+    <span *ngIf="!isLoggedIn">
+        <a routerLink="/login" routerLinkActive="active">Login</a>
+    </span>
+    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+</nav>
+<router-outlet></router-outlet>
